@@ -3,6 +3,11 @@ h2 {
     font-size: 35px;
 }
 
+section {
+    width: 90%;
+    margin: 100px auto;
+
+}
 
 /* #region  Scrollable navbar (horizontal) */
 html {
@@ -34,12 +39,14 @@ html {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px;
+    padding: 30px;
     text-decoration: none;
+    font-size: 22px;
 }
 
 #h_scrollable_nav .scroll_menu a:hover {
     background-color: #777;
+    
 }
 
 ::-webkit-scrollbar {
@@ -54,18 +61,69 @@ html {
 }
 /* #endregion */
 
+/* #region  Scrollable navbar (horizontal) w/ JavaScript */
+/* #h_scrollable_nav_JS {
+    width: 50%;
+    background-color: rgba(46, 139, 86, 0.434);
+    border: seagreen solid 4px;
+    border-radius: 20px;
+    margin: 50px auto;
+} */
+/* #endregion */
+
+/* #region  Sticky aside */
+#sticky_aside {
+    background-color: rgba(76, 0, 130, 0.338);
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
+    border: indigo solid 5px;
+    border-radius: 20px;
+    padding: 30px;
+}
+#sticky_aside h2 {
+    color: purple;
+}
+#sticky_aside .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sticky_aside .content,
+#sticky_aside .sidebar {
+    border-radius: 20px;
+    padding: 40px;
+    background-color: pink;
+}
+
+#sticky_aside .content {
+    width: 60%;
+}
+
+#sticky_aside .sidebar {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 25%;
+    height: 300px;
+    overflow-y: scroll;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+}
+          
+/* #endregion */
+
 
 /* #region  Extra */
 #extra {
     background-color: Yellow;
+    text-align: center;
     color: black;
     font-weight: bold;
     border: black solid 3px;
+    border-radius: 20px;
 }
 #extra .extra_div {
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 100px;
     line-height: 3;
 }
 
