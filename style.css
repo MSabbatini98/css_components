@@ -1,0 +1,72 @@
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+
+/* #region  Scrollable navbar (horizontal) */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#h_scrollable_nav {
+    border:2px solid black;
+    border-radius: 20px;
+    background-color: grey;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+
+#h_scrollable_nav .scroll_menu {
+    width: 75%;
+    margin: auto;
+    background-color: #333;
+    border: solid 2px black;
+    overflow: auto;
+    white-space: nowrap;
+    resize: horizontal;
+}
+  
+#h_scrollable_nav .scroll_menu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+#h_scrollable_nav .scroll_menu a:hover {
+    background-color: #777;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    height: 5px;
+    background: transparent;  
+}
+/* Optional: show position indicator in blue OBV */
+::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 10px;
+}
+/* #endregion */
+
+
+/* #region  Extra */
+#extra {
+    background-color: Yellow;
+    color: black;
+    font-weight: bold;
+    border: black solid 3px;
+}
+#extra .extra_div {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    line-height: 3;
+}
+
+/* #endregion */
