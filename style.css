@@ -2,11 +2,9 @@ h2 {
     text-align: center;
     font-size: 35px;
 }
-
 section {
     width: 90%;
     margin: 100px auto;
-
 }
 
 /* #region  Scrollable navbar (horizontal) */
@@ -14,7 +12,6 @@ html {
     overflow: scroll;
     overflow-x: hidden;
 }
-
 #h_scrollable_nav {
     border:2px solid black;
     border-radius: 20px;
@@ -24,7 +21,6 @@ html {
     text-align: center;
     padding: 40px;
 }
-
 #h_scrollable_nav .scroll_menu {
     width: 75%;
     margin: auto;
@@ -34,7 +30,6 @@ html {
     white-space: nowrap;
     resize: horizontal;
 }
-  
 #h_scrollable_nav .scroll_menu a {
     display: inline-block;
     color: white;
@@ -43,10 +38,22 @@ html {
     text-decoration: none;
     font-size: 22px;
 }
-
+/* Hover animation */
+@keyframes btn_zoom {
+    from {font-size: 22px;}
+    to {transform: scale(1.3); background-color: blue;}
+}
+@keyframes rotate {
+    0% { transform:rotate(0deg); }
+    99.999% { background:blue; }
+    100% { transform:rotate(360deg); background:red; }
+}
 #h_scrollable_nav .scroll_menu a:hover {
     background-color: #777;
-    
+    animation-name: btn_zoom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    /* transform: scale(1.4);    */
 }
 
 ::-webkit-scrollbar {
@@ -88,18 +95,15 @@ html {
     display: flex;
     justify-content: space-between;
 }
-
 #sticky_aside .content,
 #sticky_aside .sidebar {
     border-radius: 20px;
     padding: 40px;
     background-color: pink;
 }
-
 #sticky_aside .content {
     width: 60%;
 }
-
 #sticky_aside .sidebar {
     margin-top: 100px;
     margin-bottom: 100px;
